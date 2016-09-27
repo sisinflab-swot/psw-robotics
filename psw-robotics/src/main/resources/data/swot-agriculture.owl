@@ -1,0 +1,2115 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sisinflab.poliba.it/swottools/ontologies/agriculture#"
+     xml:base="http://sisinflab.poliba.it/swottools/ontologies/agriculture"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees)</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lon -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lon">
+        <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees)</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigatedArea -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigatedArea"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigationType -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigationType"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNitrogenQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNitrogenQuantity"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPhosphorusQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPhosphorusQuantity"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPotassiumQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPotassiumQuantity"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPressure -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPressure"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilFertilizerLevel -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilFertilizerLevel"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition -->
+
+    <owl:ObjectProperty rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Actuators -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Actuators">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#AfterGrainDevelopment -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#AfterGrainDevelopment">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Wheat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Agricolture -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Agricolture"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Beans -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Beans">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Product"/>
+        <owl:disjointWith rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+        <owl:disjointWith rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</owl:maxCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Wheat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</owl:maxCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Capacity -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Capacity">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Clear -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Clear">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Weather"/>
+        <owl:disjointWith rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Cloudy -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Cloudy">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Agricolture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Crop -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Crop">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Crop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Beans -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Beans">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Rice -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Rice">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Wheat -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Wheat">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Drain_Excess_Water -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Drain_Excess_Water">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flodded"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilization -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilization">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilizer -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilizer">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Field -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Field">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flodded -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flodded">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">71</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flowering -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flowering">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">31</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">45</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flowering_PodDevelopment -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flowering_PodDevelopment">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Beans"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#GrainDevelopment -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#GrainDevelopment">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">46</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropAge"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">60</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Heat_Stress -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Heat_Stress">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Stresses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Heavy_Irrigation -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Heavy_Irrigation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_ReinfallPerHour"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">51</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">70</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Capacity -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Capacity">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Capacity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_IrrigatedArea -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_IrrigatedArea">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#IrrigatedArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_JetLenght -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_JetLenght">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#JetLenght"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Nitrogen -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Nitrogen">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Nitrogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenFertilization -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenFertilization">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenFertilization"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNitrogenQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Nitrogen"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPhosphorusQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Phosphorus"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPotassiumQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Potassium"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNitrogenQuantity"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPhosphorusQuantity"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPotassiumQuantity"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenFertilization_Wheat -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenFertilization_Wheat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#GrainDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilFertilizerLevel"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenLevel"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenFertilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NozzleDiameter -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NozzleDiameter">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NozzleDiameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_PhosphorousLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_PhosphorousLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Phosphorus -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Phosphorus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Potassium -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Potassium">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Potassium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_PotassiumLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_PotassiumLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Pressure -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Pressure">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_ReinfallPerHour -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_ReinfallPerHour">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#ReinfallPerHour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#HumiditySensor -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Interfaces -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Interfaces">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#IrrigatedArea -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#IrrigatedArea">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Irrigation -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Irrigation">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#JetLenght -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#JetLenght">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#LightSensor -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#LightSensor">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_ReinfallPerHour"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Beans1 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Beans1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flowering_PodDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Beans"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Beans2 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Beans2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Seeding_VegetationGrowth_PodMaturation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Beans"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Rice -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Rice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Wheat1 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Wheat1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Wheat2 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Wheat2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#AfterGrainDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Wheat3 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation_Wheat3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#AfterGrainDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Light_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#LongThrowGearDrive_Springler -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#LongThrowGearDrive_Springler">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigatedArea"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_IrrigatedArea"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_JetLenght"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPressure"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Pressure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_ReinfallPerHour"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#LongThrowInpulse_Springler -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#LongThrowInpulse_Springler">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigatedArea"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_IrrigatedArea"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_JetLenght"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPressure"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Pressure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_ReinfallPerHour"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Capacity -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Capacity">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Capacity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_IrrigatedArea -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_IrrigatedArea">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#IrrigatedArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_JetLenght -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_JetLenght">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#JetLenght"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Nitrogen -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Nitrogen">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Nitrogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenFertilization -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenFertilization">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenFertilization"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNitrogenQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Nitrogen"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPhosphorusQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Phosphorous"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPotassiumQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Potassium"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenFertilization_Rice -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenFertilization_Rice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Rice"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilFertilizerLevel"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NitrogenLevel"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenFertilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NitrogenLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NozzleDiameter -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NozzleDiameter">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NozzleDiameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_PhosphorousLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_PhosphorousLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Phosphorus -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Phosphorus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Potassium -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Potassium">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Potassium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_PotassiumLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_PotassiumLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Pressure -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Pressure">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_ReinfallPerHour -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_ReinfallPerHour">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#ReinfallPerHour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#MediumThrow_Springler -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#MediumThrow_Springler">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigatedArea"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_IrrigatedArea"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_JetLenght"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPressure"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Pressure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_ReinfallPerHour"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Capacity -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Capacity">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Capacity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_IrrigatedArea -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_IrrigatedArea">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#IrrigatedArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_JetLenght -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_JetLenght">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#JetLenght"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Nitrogen -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Nitrogen">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Nitrogen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_NozzleDiameter -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_NozzleDiameter">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NozzleDiameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Phosphorous -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Phosphorous">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Phosphorus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Potassium -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Potassium">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Potassium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Pressure -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Pressure">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pressure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_ReinfallPerHour -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_ReinfallPerHour">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#ReinfallPerHour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Misting -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Misting">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Water_Misting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_ReinfallPerHour"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation_Beans -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation_Beans">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flowering_PodDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Beans"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation_Rice -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation_Rice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation_Wheat -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation_Wheat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BelowThreshold"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Moderate_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Nitrogen -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Nitrogen">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenFertilization -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenFertilization">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilFertilizerLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation_Beans -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation_Beans">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Seeding_VegetationGrowth_PodMaturation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Beans"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation_Rice -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation_Rice">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Flodded"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation_Wheat -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation_Wheat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#BeforePloughing_Flowering_GrainDevelopment"/>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropStage"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCropType"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureClass"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasWeatherCondition"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#None_Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">31</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasSoilMoistureLevel"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal_NitrogenLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal_NitrogenLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NitrogenLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal_PhosphorousLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal_PhosphorousLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal_PotassiumLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Normal_PotassiumLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#NozzleDiameter -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#NozzleDiameter">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#PesticidesControl -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PesticidesControl">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pests -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pests">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Phosphorus -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusFertilization -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusFertilization">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PhosphorusLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilFertilizerLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Potassium -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Potassium">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumFertilization -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumFertilization">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Fertilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#PotassiumLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilFertilizerLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pressure -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Pressure">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Product -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Product">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Agricolture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rain">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#ReinfallPerHour -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#ReinfallPerHour">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Rice">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Product"/>
+        <owl:disjointWith rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Seeding_VegetationGrowth_PodMaturation -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Seeding_VegetationGrowth_PodMaturation">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#CropGrowthStage_Beans"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Sensors -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Sensors">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Services -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Services">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Agricolture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#ShortThrow_Springler -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#ShortThrow_Springler">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasIrrigatedArea"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_IrrigatedArea"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_JetLenght"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPressure"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Pressure"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_ReinfallPerHour"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Soil -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Soil">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilFertilizerLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilFertilizerLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureLevel -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureLevel">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureSensor -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#SoilMoistureSensor">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Stresses -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Stresses">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#System -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#System"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Tripod -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Tripod">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#WaterSprinkler">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Actuators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Water_Misting -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Water_Misting">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Water_Stress -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Water_Stress">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Stresses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Watering">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Weather -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Weather"/>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Wheat">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_1 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_1">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_2 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_2">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_3 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_3">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_4 -->
+
+    <owl:Class rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Zone_4">
+        <rdfs:subClassOf rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Field"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

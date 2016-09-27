@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/saverio/ontologies/2016/4/untitled-ontology-35#"
+     xml:base="http://www.semanticweb.org/saverio/ontologies/2016/4/untitled-ontology-35"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	 
+	<owl:Ontology rdf:about="">
+		<owl:imports rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture"/>
+	</owl:Ontology>
+	
+	<!-- http://sisinflab.poliba.it/swottools/ontologies/agriculture#RobotB -->
+
+    <owl:NamedIndividual rdf:about="http://sisinflab.poliba.it/swottools/ontologies/agriculture#RobotB">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasCapacity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_Capacity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasJetLenght"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_JetLenght"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNitrogenQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Low_Nitrogen"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasNozzleDiameter"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_NozzleDiameter"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPhosphorusQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Phosphorous"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasPotassiumQuantity"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#Medium_Potassium"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#hasRainfallPerHour"/>
+                        <owl:allValuesFrom rdf:resource="http://sisinflab.poliba.it/swottools/ontologies/agriculture#High_ReinfallPerHour"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+	
+</rdf:RDF>

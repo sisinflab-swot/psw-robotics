@@ -21,10 +21,15 @@ repositories {
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
+
+	/*** Physical (Semantic) Web Collection library ***/
+	compile name: 'libs'
+	
     /*** library for semantics ***/
     compile name: 'minime-beta-2.0.0'
     compile ('net.sourceforge.owlapi:owlapi-distribution:3.4.10') { transitive = false }
     compile 'colt:colt:1.2.0'
+    compile 'org.json:json:20140107'
     
     /*** Minimal Json ***/
     compile 'com.eclipsesource.minimal-json:minimal-json:0.9.4'
@@ -34,5 +39,9 @@ dependencies {
     
     /*** Bluetooth Bluecove library ***/
     compile name: 'bluecove-2.1.1-SNAPSHOT'
-    compile name: 'bluecove-gpl-2.1.1-SNAPSHOT'
+    compile name: 'bluecove-gpl-2.1.1-SNAPSHOT'   
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
 }

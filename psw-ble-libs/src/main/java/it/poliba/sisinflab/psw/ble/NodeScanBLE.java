@@ -19,14 +19,14 @@ import javax.microedition.io.Connector;
 import javax.microedition.io.StreamConnection;
 
 import org.apache.commons.io.FileUtils;
+import org.physical_web.collection.UrlDevice;
+
 import com.eclipsesource.json.Json;
 import com.eclipsesource.json.JsonObject;
 
-import it.poliba.sisinflab.psw.ble.beacon.EddystoneBeacon;
-import it.poliba.sisinflab.psw.ble.beacon.PSWUidBeacon;
-import it.poliba.sisinflab.psw.ble.beacon.PSWUrlBeacon;
-import it.poliba.sisinflab.psw.ble.beacon.UidBeacon;
-import it.poliba.sisinflab.psw.ble.beacon.UrlBeacon;
+import it.poliba.sisinflab.psw.PswDevice;
+import it.poliba.sisinflab.psw.PswEddystoneBeacon;
+import it.poliba.sisinflab.psw.UidEddystoneBeacon;
 
 public class NodeScanBLE implements Runnable {
 	
@@ -84,48 +84,64 @@ public class NodeScanBLE implements Runnable {
 
 		String type = object.get("type").asString();
 
-		if (type.equals(EddystoneBeacon.UID)) {
+		if (type.equals(PSWBeaconScanner.EDDYSTONE_UID_PSW)) {
 			String ns = object.get("namespace").asString();
 			String inst = object.get("instance").asString();
+			
+			UrlDevice uidBeacon = new UrlDevice.Builder(id, "Local OWL fragment @" + id)
+					.addExtra(PSWBeaconScanner.TYPE_KEY, PSWBeaconScanner.EDDYSTONE_UID_PSW)
+					.addExtra(PSWBeaconScanner.TXPOWER_KEY, pow)
+					.addExtra(PSWBeaconScanner.RSSI_KEY, rssi)
+					.addExtra(PSWBeaconScanner.DISTANCE_KEY, dist)
+					.addExtra(PSWBeaconScanner.SCANTIME_KEY, ts)
+					.addExtra(PswDevice.PSW_UID_INST_KEY, ns.substring(4, 10))
+					.addExtra(PswDevice.PSW_UID_ONTO_KEY, ns.substring(0, 4))
+					.addExtra(PswDevice.PSW_UID_MAC_KEY, inst)
+					.build();
 
-			UidBeacon uidBeacon = new PSWUidBeacon(id, pow, rssi, dist, ts, ns, inst);
 			pushUidBeacon(uidBeacon);
 
-		} else if (type.equals(EddystoneBeacon.URL)) {
+		} else if (type.equals(PSWBeaconScanner.EDDYSTONE_URL_PSW)) {
 			String url = object.get("url").asString();
-
-			PSWUrlBeacon urlBeacon = new PSWUrlBeacon(id, pow, rssi, dist, ts, url);
+			
+			UrlDevice urlBeacon = new UrlDevice.Builder(id, url)
+					.addExtra(PSWBeaconScanner.TYPE_KEY, PSWBeaconScanner.EDDYSTONE_URL_PSW)
+					.addExtra(PSWBeaconScanner.TXPOWER_KEY, pow)
+					.addExtra(PSWBeaconScanner.RSSI_KEY, rssi)
+					.addExtra(PSWBeaconScanner.DISTANCE_KEY, dist)
+					.addExtra(PSWBeaconScanner.SCANTIME_KEY, ts)
+					.build();
 			pushUrlBeacon(urlBeacon);
 		}
 
 	}
 	
-	private void pushUidBeacon(UidBeacon b) {
-		UidBeacon oldBeacon = (UidBeacon) psw.beacons.get(b.getKey());
+	private void pushUidBeacon(UrlDevice b) {
+		UrlDevice oldBeacon = (UrlDevice) psw.beacons.get(b.getId());
 		if (oldBeacon == null || isOld(oldBeacon, b)) {
 			new UidBeaconDownloaderThread(b).run();			
 		}
 	}
 
-	private void pushUrlBeacon(UrlBeacon b) {
-		UrlBeacon oldBeacon = (UrlBeacon) psw.beacons.get(b.getKey());
+	private void pushUrlBeacon(UrlDevice b) {
+		UrlDevice oldBeacon = (UrlDevice) psw.beacons.get(b.getId());
 		if (oldBeacon == null || isOld(oldBeacon, b)) {
 			// resolve short URL and download the relative file (if present)	
 			new UrlBeaconDownloaderThread(b).run();					
 		}
 	}
 
-	private boolean isOld(EddystoneBeacon oldB, EddystoneBeacon newB) {
-		if ((newB.getTimestamp() - oldB.getTimestamp()) >= MAX_AGE)
+	private boolean isOld(UrlDevice oldB, UrlDevice newB) {
+		if ((newB.getExtraLong(PSWBeaconScanner.SCANTIME_KEY) - oldB.getExtraLong(PSWBeaconScanner.SCANTIME_KEY)) >= MAX_AGE)
 			return true;
 		else
 			return false;
 	}
 
 	class UrlBeaconDownloaderThread extends Thread {
-		UrlBeacon b;
+		UrlDevice b;
 
-		public UrlBeaconDownloaderThread(UrlBeacon b) {
+		public UrlBeaconDownloaderThread(UrlDevice b) {
 			super();
 			this.b = b;
 		}
@@ -135,7 +151,7 @@ public class NodeScanBLE implements Runnable {
 			try {
 				/*** Resolve short URL ***/
 				long start = System.currentTimeMillis();
-				url = new URL(b.getShortUrl());
+				url = new URL(b.getUrl());
 				HttpURLConnection connection = (HttpURLConnection) url.openConnection(Proxy.NO_PROXY);
 		        connection.setInstanceFollowRedirects(false);
 		        connection.connect();
@@ -145,11 +161,11 @@ public class NodeScanBLE implements Runnable {
 		        System.out.println("[INFO] " + expandedURL + " resolved in " + (end-start) + "ms");
 		        
 		        
-		        //System.out.println("[INFO] " + b.getShortUrl() + " --> " + expandedURL);		        
-		        b.setFullUrl(expandedURL);
+		        //System.out.println("[INFO] " + b.getShortUrl() + " --> " + expandedURL);		      
+		        b = new UrlDevice.Builder(b).addExtra(PSWBeaconScanner.SITEURL_KEY, expandedURL).build();
 		        
-		        if(b instanceof PSWUrlBeacon){		        	
-		        	String name = "tmp-" + b.getID() + "." + b.getType();
+		        if(b.getExtraString(PSWBeaconScanner.TYPE_KEY).equals(PSWBeaconScanner.EDDYSTONE_URL_PSW)){		        	
+		        	String name = "tmp-" + b.getId() + "." + PSWBeaconScanner.EDDYSTONE_URL_PSW;
 		        	File tmp = new File(TMP_DIR + name);
 		        	
 		        	start = System.currentTimeMillis();
@@ -163,15 +179,15 @@ public class NodeScanBLE implements Runnable {
 		        	double sr = psw.kb.getSemanticRank(iri);
 		        	((SemUrlBeacon) b).setSemanticRank(sr);*/
 		        	
-		        	psw.kb.loadIndividualFromFile((PSWUrlBeacon)b, new FileInputStream(tmp));
+		        	psw.kb.loadIndividualFromFile(b, new FileInputStream(tmp));
 		        	
 		        	FileUtils.forceDelete(tmp);
 		        }
 		        
-		        psw.beacons.put(b.getKey(), b);        
+		        psw.beacons.put(b.getId(), b);        
 		        
 			} catch (IOException e) {
-				System.err.println("[ERROR] " + b.getShortUrl() + " not resolved!");
+				System.err.println("[ERROR] " + b.getUrl() + " not resolved!");
 				e.printStackTrace();
 			}
 		}
@@ -179,16 +195,16 @@ public class NodeScanBLE implements Runnable {
 	}
 	
 	class UidBeaconDownloaderThread extends Thread {
-		UidBeacon b;
+		UrlDevice b;
 		
-		public UidBeaconDownloaderThread(UidBeacon b) {
+		public UidBeaconDownloaderThread(UrlDevice b) {
 			super();
 			this.b = b;
 		}
 		
 		public void run() {
 			
-			if (b instanceof PSWUidBeacon){
+			if (b.getExtraString(PSWBeaconScanner.TYPE_KEY).equals(PSWBeaconScanner.EDDYSTONE_UID_PSW)){
 				
 				while(bt_busy){
 					try {
@@ -198,20 +214,22 @@ public class NodeScanBLE implements Runnable {
 					}
 				}
 				
-				PSWUidBeacon pswB = (PSWUidBeacon) b;
+				UrlDevice pswB = b;
 				try {
 					bt_busy = true;
-					File tmp = getFileFromRemoteDevice(pswB.getDeviceAddress(), pswB.getOntologyID(), pswB.getResourceID());										
+					File tmp = getFileFromRemoteDevice(pswB.getExtraString(PswDevice.PSW_UID_MAC_KEY), 
+							pswB.getExtraString(PswDevice.PSW_UID_ONTO_KEY), 
+							pswB.getExtraString(PswDevice.PSW_UID_INST_KEY));										
 					psw.kb.loadIndividualFromFile(pswB, new FileInputStream(tmp));	
 					bt_busy = false;
 					
 				} catch (IOException e) {
-					System.err.println("[ERROR] Error during communication with [" + pswB.getDeviceAddress() + "] device");
+					System.err.println("[ERROR] Error during communication with [" + pswB.getExtraString(PswDevice.PSW_UID_MAC_KEY) + "] device");
 					e.printStackTrace();
 				}
 			}
 			
-			psw.beacons.put(b.getKey(), b);	
+			psw.beacons.put(b.getId(), b);	
 		}
 		
 		private File getFileFromRemoteDevice(String address, String ontoID, String instanceID) throws IOException {

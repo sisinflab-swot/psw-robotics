@@ -3,6 +3,7 @@ package it.poliba.sisinflab.owl;
 import java.io.File;
 import java.io.InputStream;
 
+import org.physical_web.collection.UrlDevice;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAnnotation;
@@ -15,8 +16,8 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import it.poliba.sisinflab.owl.owlapi.MicroReasoner;
 import it.poliba.sisinflab.owl.owlapi.MicroReasonerFactory;
 import it.poliba.sisinflab.owl.sod.hlds.Item;
-import it.poliba.sisinflab.psw.ble.beacon.PSWUidBeacon;
-import it.poliba.sisinflab.psw.ble.beacon.PSWUrlBeacon;
+import it.poliba.sisinflab.psw.PswDevice;
+import it.poliba.sisinflab.psw.ble.PSWBeaconScanner;
 
 public class KBManager {
 
@@ -77,7 +78,7 @@ public class KBManager {
 		return iri;
 	}
 	
-	public void loadIndividualFromFile(PSWUrlBeacon b, InputStream is) {
+	public void loadIndividualFromFile(UrlDevice b, InputStream is) {
 
 		long start = System.currentTimeMillis();
 		IRI iri = null;
@@ -90,18 +91,25 @@ public class KBManager {
 
 			if (ind != null) {
 				iri = ind.getIRI();
-				b.setAnnotationIRI(iri);
+				
+				double lat = 0;
+				double lon = 0;
 				
 				/*** Retrieve Geo OWLAnnotations ***/
 				for(OWLAnnotation an : ind.getAnnotations(tmp)){
 	                System.out.println(an.getProperty().getIRI() + ": " + an.getValue());
 	                if (an.getProperty().getIRI().getFragment().equals("lat")){
 	                	OWLLiteral val=(OWLLiteral)an.getValue();
-	                	b.setLatitude(val.parseDouble());
+	                	lat = val.parseDouble();
 	                } else if (an.getProperty().getIRI().getFragment().equals("lon")){
 	                	OWLLiteral val=(OWLLiteral)an.getValue();
-	                	b.setLongitude(val.parseDouble());
+	                	lon = val.parseDouble();
 	                }
+	                
+	                b = new UrlDevice.Builder(b)
+	                		.addExtra(PswDevice.PSW_IRI_KEY, iri.toString())
+	                		.addExtra(PSWBeaconScanner.LAT_KEY, lat)
+	                		.addExtra(PSWBeaconScanner.LON_KEY, lon).build();
 
 	                //TODO: Add other properties in the OWL file
 	            }
@@ -118,7 +126,7 @@ public class KBManager {
 		}
 	}
 	
-	public void loadIndividualFromFile(PSWUidBeacon b, InputStream is) {
+	/*public void loadIndividualFromFile(UrlDevice b, InputStream is) {
 		
 		long start = System.currentTimeMillis();
 		IRI iri = null;
@@ -131,20 +139,23 @@ public class KBManager {
 
 			if (ind != null) {
 				iri = ind.getIRI();
-				b.setAnnotationIRI(iri);				
+
+				double lat, lon;
 				
-				/*** Retrieve Geo OWLAnnotations ***/
 				for(OWLAnnotation an : ind.getAnnotations(tmp)){
 	                System.out.println(an.getProperty().getIRI() + ": " + an.getValue());
 	                if (an.getProperty().getIRI().getFragment().equals("lat")){
 	                	OWLLiteral val=(OWLLiteral)an.getValue();
-	                	b.setLatitude(val.parseDouble());
+	                	lat = val.parseDouble();
 	                } else if (an.getProperty().getIRI().getFragment().equals("lon")){
 	                	OWLLiteral val=(OWLLiteral)an.getValue();
-	                	b.setLongitude(val.parseDouble());
+	                	lon = val.parseDouble();
 	                }
-
-	                //TODO: Add other properties in the OWL file
+	                
+	                b = new UrlDevice.Builder(b)
+	                		.addExtra(PswDevice.PSW_IRI_KEY, iri.toString())
+	                		.addExtra(PSWBeaconScanner.LAT_KEY, lat)
+	                		.addExtra(PSWBeaconScanner.LON_KEY, lon).build();
 	            }
 			}
 
@@ -158,7 +169,7 @@ public class KBManager {
 			e.printStackTrace();
 		}
 				
-	}
+	}*/
 	
 	private OWLNamedIndividual getIndividual(OWLOntology onto){
         for(OWLNamedIndividual ind : onto.getIndividualsInSignature()){

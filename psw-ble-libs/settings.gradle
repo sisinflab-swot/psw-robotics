@@ -17,3 +17,7 @@ include 'services:webservice'
 */
 
 rootProject.name = 'psw-ble-libs'
+
+/*include ':app', ':libs'
+
+project(':libs').projectDir = new File('../../physical-semantic-web/java/libs')*/

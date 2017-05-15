@@ -6,15 +6,35 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.physical_web.collection.UrlDevice;
+import org.semanticweb.owlapi.model.IRI;
+
 import it.poliba.sisinflab.owl.KBManager;
-import it.poliba.sisinflab.psw.ble.beacon.EddystoneBeacon;
-import it.poliba.sisinflab.psw.ble.beacon.PSWUrlBeacon;
+import it.poliba.sisinflab.psw.PswDevice;
 import it.poliba.sisinflab.psw.ble.utils.Utils;
 
 public class PSWBeaconScanner {
 	
+	public static final String EDDYSTONE_URL = "url";
+	public static final String EDDYSTONE_URL_PSW = "url-psw";
+	public static final String EDDYSTONE_UID_PSW = "uid-psw";
+	
+	public static final String TYPE_KEY = "type";
+	public static final String PUBLIC_KEY = "public";
+	public static final String TITLE_KEY = "title";
+	public static final String DESCRIPTION_KEY = "description";
+	public static final String RSSI_KEY = "rssi";
+	public static final String TXPOWER_KEY = "tx";
+	public static final String SCANTIME_KEY = "scantime";
+	public static final String DISTANCE_KEY = "distance";
+	public static final String RANK_KEY = "rank";
+	public static final String SITEURL_KEY = "siteurl";
+	
+	public static final String LAT_KEY = "lat";
+	public static final String LON_KEY = "lon";
+	
 	KBManager kb;	
-	HashMap<String, EddystoneBeacon> beacons;
+	HashMap<String, UrlDevice> beacons;
 	Utils utils;
 	
 	public PSWBeaconScanner() throws Exception {
@@ -25,7 +45,7 @@ public class PSWBeaconScanner {
 		long end = System.currentTimeMillis();
 		System.out.println("[INFO] KB loaded in " + (end-start) + " ms" );
 		
-		beacons = new HashMap<String, EddystoneBeacon>();
+		beacons = new HashMap<String, UrlDevice>();
 		
 		scanBeacons();
 	}	
@@ -33,7 +53,7 @@ public class PSWBeaconScanner {
 	public PSWBeaconScanner(File onto) throws Exception {
 		utils = new Utils();
 		kb = new KBManager(onto);		
-		beacons = new HashMap<String, EddystoneBeacon>();
+		beacons = new HashMap<String, UrlDevice>();
 		
 		scanBeacons();
 	}
@@ -55,53 +75,65 @@ public class PSWBeaconScanner {
 	
 	private void scanSimulatedBeacons() throws IOException {				
 		/*** Load 1st Beacon ***/
-		PSWUrlBeacon b1 = new PSWUrlBeacon("DB7618A61C4E", 50, -40, 3, System.currentTimeMillis(), "http://goo.gl/dwT0yQ");
-		b1.setFullUrl("http://sim.area/area/zoneA");
+		UrlDevice b1 = new UrlDevice.Builder("DB7618A61C4E", "http://goo.gl/dwT0yQ")
+				.addExtra(TXPOWER_KEY, 50)
+				.addExtra(RSSI_KEY, -40)
+				.addExtra(DISTANCE_KEY, 3)
+				.addExtra(SCANTIME_KEY, System.currentTimeMillis())
+				.addExtra(SITEURL_KEY, "http://sim.area/area/zoneA").build();
 		
 		kb.loadIndividualFromFile(b1, utils.getResourceDocument("area/ZoneA.owl"));
-		beacons.put(b1.getID(), b1);
+		beacons.put(b1.getId(), b1);
 		
 		/*** Load 2nd Beacon ***/
-		PSWUrlBeacon b2 = new PSWUrlBeacon("7E975BB7D4C8", 50, -40, 3, System.currentTimeMillis(), "http://swot/zoneb");
-		b2.setFullUrl("http://sim.area/area/zoneB");
+		UrlDevice b2 = new UrlDevice.Builder("7E975BB7D4C8", "http://swot/zoneb")
+				.addExtra(TXPOWER_KEY, 50)
+				.addExtra(RSSI_KEY, -40)
+				.addExtra(DISTANCE_KEY, 3)
+				.addExtra(SCANTIME_KEY, System.currentTimeMillis())
+				.addExtra(SITEURL_KEY, "http://sim.area/area/zoneB").build();
 		
 		kb.loadIndividualFromFile(b2, utils.getResourceDocument("area/ZoneB.owl"));
-		beacons.put(b2.getID(), b2);
+		beacons.put(b2.getId(), b2);
 		
 		/*** Load 3rd Beacon ***/
-		PSWUrlBeacon b3 = new PSWUrlBeacon("92C86BE67D69", 50, -40, 3, System.currentTimeMillis(), "http://swot/zonec");
-		b3.setFullUrl("http://sim.area/area/zoneC");
+		UrlDevice b3 = new UrlDevice.Builder("92C86BE67D69", "http://swot/zonec")
+				.addExtra(TXPOWER_KEY, 50)
+				.addExtra(RSSI_KEY, -40)
+				.addExtra(DISTANCE_KEY, 3)
+				.addExtra(SCANTIME_KEY, System.currentTimeMillis())
+				.addExtra(SITEURL_KEY, "http://sim.area/area/zoneC").build();
 		
 		kb.loadIndividualFromFile(b3, utils.getResourceDocument("area/ZoneC.owl"));	
-		beacons.put(b3.getID(), b3);				
+		beacons.put(b3.getId(), b3);				
 	}
 	
-	public HashMap<String, EddystoneBeacon> getBeacons() {
+	public HashMap<String, UrlDevice> getBeacons() {
 		return beacons;
 	}
 	
-	public HashMap<String, EddystoneBeacon> getRankedBeacons(InputStream request) {		
+	public HashMap<String, UrlDevice> getRankedBeacons(InputStream request) {		
 		kb.loadRequestFromFile(request);		
-		for(EddystoneBeacon b : beacons.values()) {
-			if (b instanceof PSWUrlBeacon) {
-				double rank = kb.getSemanticRank(((PSWUrlBeacon) b).getAnnotationIRI());
-				((PSWUrlBeacon) b).setSemanticRank(rank);
+		for(UrlDevice b : beacons.values()) {
+			if (b.getExtraString(this.TYPE_KEY).equals(EDDYSTONE_URL_PSW)) {
+				double rank = kb.getSemanticRank(IRI.create(b.getExtraString(PswDevice.PSW_IRI_KEY)));
+				b = new UrlDevice.Builder(b).addExtra(RANK_KEY, rank).build();
 			}
 		}		
 		return beacons;
 	}
 	
-	public EddystoneBeacon getBestBeacon(InputStream request){
-		ArrayList<EddystoneBeacon> rBeacons = new ArrayList<EddystoneBeacon>();
+	public UrlDevice getBestBeacon(InputStream request){
+		ArrayList<UrlDevice> rBeacons = new ArrayList<UrlDevice>();
 		rBeacons.addAll(this.getRankedBeacons(request).values());
 		
-		EddystoneBeacon best = null;
+		UrlDevice best = null;
 		double max = 0;
 		
-		for (EddystoneBeacon b : rBeacons) {
-			if (b.getRank() > max) {
+		for (UrlDevice b : rBeacons) {
+			if (b.getExtraDouble(RANK_KEY) > max) {
 				best = b;
-				max = b.getRank();
+				max = b.getExtraDouble(RANK_KEY);
 			}
 		}
 		
